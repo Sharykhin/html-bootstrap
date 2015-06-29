@@ -1,0 +1,63 @@
+@import (reference) 'properties.less';
+
+header {
+	background-color: @black-color;
+	width: 100%;	
+
+	.company-info {
+		outline: 1px solid #FF0000;
+		padding: 18px 0px;
+
+
+		.advanced-company-info-menu {
+			display: none;
+			margin-top: 15px; 
+
+			ul {
+				list-style-type: none;
+			}
+
+			li.company-info-topic	{
+				color: @light-blue-color;
+				font-size: 1.2em;
+				text-decoration: underline;
+				padding-bottom: 7px;
+
+				@media (max-width: @max-mobile) {
+					font-size:1.5em;
+				}
+			}
+
+			li {
+				.company-info-sub-menu {
+					@media (max-width: @max-mobile) {
+						display: none;
+					}
+				}
+			}
+
+		}
+		
+
+		a {
+			color: @white-color;
+			text-decoration: none;
+			font-size:1.3em;
+
+			&:hover {
+				color: darken(@white-color,10%)
+			}
+
+			@media (max-width: @max-mobile) {
+				font-size:1.7em;
+			}
+		}
+
+		
+	}
+
+	.select-market {
+		outline: 1px solid #00FF00;
+	}
+
+}
